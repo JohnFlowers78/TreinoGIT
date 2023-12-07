@@ -1,0 +1,31 @@
+### Listar produtos
+GET https://localhost:7083/api/produto/listar
+
+### Buscar produto por nome
+GET https://localhost:7083/api/produto/buscar/3
+
+### Cadastrar produto
+POST https://localhost:7083/api/produto/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Arroz",
+    "descricao" : "Tipo A",
+    "quantidade" : 150,
+    "preco" : 100,
+    "categoriaId" : 1
+}
+
+### Remover produto pelo ID
+DELETE https://localhost:7083/api/produto/deletar/21
+
+### Alterar produto pelo ID
+PUT https://localhost:7083/api/produto/alterar/6
+Content-Type: application/json
+
+{
+    "nome" : "Feijão",
+    "quantidade" : 150,
+    "preco" : 10.5,
+    "descricao" : "Alimento"
+}
